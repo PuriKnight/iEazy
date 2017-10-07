@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">iEazy</string>
+    <string name="Decrease">ลดนะจ๊ะ</string>
+    <string name="Increase">เพิ่มนะจ๊ะ</string>
 </resources>

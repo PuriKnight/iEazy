@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+     <!--content -->
+        <LinearLayout
+            android:layout_marginTop="38dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <!--Title-->
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="@dimen/h1"
+                android:text="My IMage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <!--Image-->
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:src="@drawable/iconluv1"
+                android:layout_width="@dimen/image_screen"
+                android:layout_height="@dimen/image_screen" />
+
+
+            <!--Controller-->
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--Decrease-->
+                <Button
+                    android:layoout_MarginLeft="3dp"
+                    android:textColor="@color/colorAccent"
+                    android:background="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:text="@string/Decrease"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <!--Increase-->
+                <Button
+
+                    android:textColor="#ba000d"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/Increase"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+</RelativeLayout>
