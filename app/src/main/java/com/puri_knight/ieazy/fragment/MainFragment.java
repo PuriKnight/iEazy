@@ -3,6 +3,7 @@ package com.puri_knight.ieazy.fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment; // should get fragment by Thian
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,20 +53,50 @@ public class MainFragment extends Fragment{
 
         // Increase Controller
         increaseController();
+        // Decrease Controller
+
+
+        decreaseController();
+
 
 
     }
 
+    private void decreaseController() {
+        decButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (indexInt <= 0) {
+                    indexInt = imageInts.length -1;
+
+                } else {
+                    indexInt -= 1;
+                }
+                imageView.setImageResource(imageInts[indexInt]);
+            }
+        });
+    }
+
     private void increaseController() {
+
+        final String tag = "8OctV1";
+
         incButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d(tag, "Length of Array ==> " + imageInts.length);
+                if (indexInt < imageInts.length-1) {
 
+                // ImageInt.length is parameter of Image
 
+                //Todo
+                    indexInt += 1;
 
-
-
-
+                } else {
+                    indexInt = 0;
+                }
+                Log.d(tag, "Current index ==> " + indexInt);
+                imageView.setImageResource(imageInts[indexInt]);
 
             } // OnClick
         });
