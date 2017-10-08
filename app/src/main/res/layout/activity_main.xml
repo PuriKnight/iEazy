@@ -21,22 +21,24 @@
         />
 
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:scaleType="centerCrop"
-        android:src="@drawable/bg"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</RelativeLayout>
-    <!--Content Fragment-->
-    <FrameLayout
-        android:id="@+id/contentFragmentMain"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg" />
+
+        <!--Content Fragment-->
+        <FrameLayout
+            android:id="@+id/contentFragmentMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
 
 
 </LinearLayout>

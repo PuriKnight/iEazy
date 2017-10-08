@@ -3,7 +3,9 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
      <!--content -->
         <LinearLayout
-            android:layout_marginTop="38dp"
+            android:padding="16dp"
+            android:background="#d354df"
+            android:layout_marginTop="41dp"
             android:gravity="center_horizontal"
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -24,35 +26,37 @@
 
             <!--Image-->
             <ImageView
-                android:layout_marginTop="20dp"
-                android:src="@drawable/iconluv1"
+                android:id="@+id/imvImage"
                 android:layout_width="@dimen/image_screen"
-                android:layout_height="@dimen/image_screen" />
+                android:layout_height="@dimen/image_screen"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/iconluv1" />
 
 
             <!--Controller-->
             <LinearLayout
-
+                android:layout_marginTop="20dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <!--Decrease-->
                 <Button
+                    android:id="@+id/btnDecrease"
                     android:layout_marginLeft="3dp"
                     android:textColor="@color/colorAccent"
                     android:background="@color/colorPrimary"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
                     android:text="@string/Decrease"
-                    android:layout_width="0dp"
+                    android:layout_width="1dp"
                     android:layout_height="wrap_content" />
 
                 <!--Increase-->
                 <Button
-
+                    android:id="@+id/btnIncrease"
                     android:textColor="#ba000d"
                     android:background="@color/colorPrimary"
                     android:text="@string/Increase"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content" />
 
